@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор суммы</title>
+</head>
+<body>
+    {% if calc_type != "new" %}
+    <h1>
+        Сумма чисел {{ num1 }} и {{ num2 }}:
+        {{ num1 + num2 }}
+    </h1>
+    {%else%}
+    <form action="/calc/{{ calc_type }}">
+     <label> Число1
+     <input type="number" name="a">
+     </label>
+     <label>Число2
+     <input type="number" name="b">
+     </label>
+     <select name="operation">
+        <option value="sum">сложение</option>
+        <option value="sub">вычитание</option>
+        <option value="mult">умножение</option>
+        <option value="div">деление</option>
+        
+        
+     </select>
+     <button type="submit">Посчитать</button>
+    </form>
+    {%endif%}
+    
+</body>
+</html>

@@ -1,0 +1,59 @@
+body {
+    font-family: Trebuchet, sans-serif; /* Семейство шрифтов */
+    font-size: 11px; /* Размер основного шрифта в <p></p>  */
+    background-color: #FD98FB; /* Цвет фона веб-страницы */
+    color: #333333; /* Цвет основного текста */ 
+}
+h1 {
+    color: #5988FF; /* Цвет заголовка */
+    font-size: 24px; /* Размер шрифта в пунктах */
+    font-family: Georgia, serif; /* Семейство шрифтов */
+    text-decoration-color: blue;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    animation: color-change 3s infinite
+
+}
+@keyframes color-change {
+    0% {
+        color: blue;
+        margin-left: 0;
+    }
+    50% {
+        color: greenyellow
+    }
+    100% {
+        color:#5988FF;
+        margin-left: 200px;
+    }
+}
+h2 {
+    color:#D6FF6B;
+    font-family:Trebuchet, sans-serif;
+    font-size: 20px;
+}
+ul {
+    color:#333333;
+    font-family:Trebuchet, sans-serif;
+    font-size: 14px;
+    border: 3px solid greenyellow;
+
+}
+p:hover {
+    color:#333333;
+    font-family:Trebuchet, sans-serif;
+    font-size: 14px;
+    animation: pcolor 2s infinite;
+
+}
+
+@keyframes pcolor {
+    0% {
+        color:aqua;
+    }
+    100% {
+        color:aquamarine;
+    }
+   
+}
+
